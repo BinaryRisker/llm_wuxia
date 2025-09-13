@@ -37,12 +37,6 @@ Thumbs.db
 # mdBook 构建输出
 docs/
 
-# 大纲文件
-项目配置总纲.md
-000-AI发展时间线.md
-完整目录.md
-
-
 # 系统文件
 .DS_Store
 Thumbs.db
