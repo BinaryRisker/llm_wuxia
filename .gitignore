@@ -1,0 +1,75 @@
+# 项目设定文件（不提交到Git）
+项目配置总纲.md
+完整目录.md
+000-AI发展时间线.md
+*武侠映射表*.md
+*术语标准词典*.md
+*核心要求*.md
+*大纲目录*.md
+*章节模板*.md
+
+# mdBook构建文件
+book.toml
+src/
+theme/
+build.ps1
+serve.ps1
+
+# 部署相关文件
+DEPLOY.md
+SETUP.md
+
+# 临时文件
+*.tmp
+*.bak
+*~
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# mdBook 构建输出
+docs/
+
+# 大纲文件
+项目配置总纲.md
+000-AI发展时间线.md
+完整目录.md
+
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+
+# 备份文件
+*.bak
+*.backup
+
+# Windows
+Desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.AppleDouble
+.LSOverride
