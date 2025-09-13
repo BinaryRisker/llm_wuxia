@@ -10,7 +10,6 @@
 
 # mdBook构建文件
 book.toml
-src/
 theme/
 build.ps1
 serve.ps1
