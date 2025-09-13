@@ -29,13 +29,26 @@ jobs:
         with:
           mdbook-version: 'latest'
           
-      - name: Build with mdBook
-        run: mdbook build
-        
+      - name: Build with mdBook (force output to docs)
+        run: mdbook build -d docs
+
+      - name: Show build outputs (debug)
+        run: |
+          ls -la
+          ls -la docs || true
+
+      - name: Verify docs directory exists
+        run: |
+          if [ ! -d "docs" ]; then
+            echo "docs directory not found after mdbook build" >&2
+            exit 1
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs
+          if-no-files-found: error
 
   deploy:
     environment:
