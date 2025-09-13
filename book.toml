@@ -1,0 +1,45 @@
+[book]
+title = "AI终极之路：江湖风云录"
+author = "jiang"
+description = "一部以金庸武侠小说风格创作的AI大模型发展史，将2017年至2025年的人工智能技术发展历程用武侠江湖的形式重新演绎"
+language = "zh"
+
+[build]
+build-dir = "docs"
+create-missing = true
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/BinaryRisker/llm_wuxia"
+edit-url-template = "https://github.com/BinaryRisker/llm_wuxia/edit/main/{path}"
+theme = "theme"
+additional-css = ["theme/css/wuxia.css"]
+
+[output.html.print]
+enable = true
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.html.playground]
+copyable = true
+copy-js = true
+
+[preprocessor.links]
+# 启用链接预处理器
+
+[preprocessor.index]
+# 启用索引预处理器

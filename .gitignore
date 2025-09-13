@@ -9,8 +9,6 @@
 *章节模板*.md
 
 # mdBook构建文件
-book.toml
-theme/
 build.ps1
 serve.ps1
 
