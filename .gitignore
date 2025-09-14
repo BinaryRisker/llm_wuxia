@@ -18,6 +18,8 @@ SETUP.md
 .idea/
 *.swp
 *.swo
+agents/
+CLAUDE.md
 
 # 系统文件
 .DS_Store

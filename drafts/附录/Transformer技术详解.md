@@ -1,9 +1,9 @@
-# Transformer技术详解
+# 专注心经技术详解
 
 ## 技术背景
 
 ### 历史发展
-- **2017年6月**：Google发布《Attention Is All You Need》论文
+- **2017年6月**：Google发布《专注凝神术 Is All You Need》论文
 - **核心创新**：完全基于注意力机制，摒弃循环和卷积
 - **影响深远**：成为现代大语言模型的基础架构
 
@@ -14,9 +14,9 @@
 
 ## 核心组件
 
-### Self-Attention机制
+### Self-专注凝神术机制
 ```
-Attention(Q,K,V) = softmax(QK^T/√d_k)V
+专注凝神术(Q,K,V) = softmax(QK^T/√d_k)V
 ```
 
 **武侠化理解**：
@@ -25,7 +25,7 @@ Attention(Q,K,V) = softmax(QK^T/√d_k)V
 - **V（Value）**：师父传授的具体内容
 - **注意力权重**：弟子对不同知识点的关注程度
 
-### Multi-Head Attention
+### Multi-Head 专注凝神术
 **技术原理**：
 - 8个或16个不同的attention头
 - 每个头关注不同的特征维度
@@ -38,7 +38,7 @@ Attention(Q,K,V) = softmax(QK^T/√d_k)V
 
 ### Position Encoding
 **技术需求**：
-- Attention机制本身没有位置信息
+- 专注凝神术机制本身没有位置信息
 - 需要额外编码来表示词的位置关系
 
 **实现方法**：
@@ -56,21 +56,21 @@ PE(pos,2i+1) = cos(pos/10000^(2i/d_model))
 
 ### Encoder架构
 **组成部分**：
-1. Multi-Head Self-Attention
+1. Multi-Head Self-专注凝神术
 2. Add & Norm（残差连接+层归一化）
 3. Feed Forward Network
 4. Add & Norm
 
 **武侠化描述**：
-- **Self-Attention**：内功修炼，自我感悟
+- **Self-专注凝神术**：内功修炼，自我感悟
 - **残差连接**：不忘初心，保持本源
 - **层归一化**：调息练气，保持平衡
 - **前馈网络**：外功修炼，技能提升
 
 ### Decoder架构
 **特殊机制**：
-- Masked Self-Attention：防止看到未来信息
-- Encoder-Decoder Attention：利用编码器信息
+- Masked Self-专注凝神术：防止看到未来信息
+- Encoder-Decoder 专注凝神术：利用编码器信息
 
 **武侠化理解**：
 - **掩码机制**：如同预测未来，不能提前知晓
@@ -105,7 +105,7 @@ lrate = d_model^(-0.5) * min(step_num^(-0.5), step_num * warmup_steps^(-1.5))
 
 ## 实际应用
 
-### GPT系列（Decoder-only）
+### 无极真经系列（Decoder-only）
 **特点**：
 - 只使用Decoder部分
 - 专注于生成任务
@@ -113,7 +113,7 @@ lrate = d_model^(-0.5) * min(step_num^(-0.5), step_num * warmup_steps^(-1.5))
 
 **武侠门派**：无极宗的《无极生成大法》
 
-### BERT系列（Encoder-only）
+### BERT神功系列（Encoder-only）
 **特点**：
 - 只使用Encoder部分
 - 专注于理解任务
@@ -123,7 +123,7 @@ lrate = d_model^(-0.5) * min(step_num^(-0.5), step_num * warmup_steps^(-1.5))
 
 ### T5系列（Encoder-Decoder）
 **特点**：
-- 完整的Transformer架构
+- 完整的专注心经架构
 - 统一的文本到文本框架
 - 适应多种任务
 
@@ -161,15 +161,15 @@ lrate = d_model^(-0.5) * min(step_num^(-0.5), step_num * warmup_steps^(-1.5))
 3. **RMSNorm**：改进的归一化方法
 
 ### 效率优化
-1. **Flash Attention**：内存高效的注意力计算
-2. **Sparse Attention**：稀疏注意力模式
-3. **Linear Attention**：线性复杂度的注意力
+1. **Flash 专注凝神术**：内存高效的注意力计算
+2. **Sparse 专注凝神术**：稀疏注意力模式
+3. **Linear 专注凝神术**：线性复杂度的注意力
 
 ### 应用拓展
-1. **Vision Transformer**：视觉领域应用
-2. **Audio Transformer**：音频处理
-3. **Multi-modal Transformer**：多模态融合
+1. **Vision 专注心经**：视觉领域应用
+2. **Audio 专注心经**：音频处理
+3. **Multi-modal 专注心经**：多模态融合
 
 ---
 
-*Transformer技术的出现真正开启了AI的新纪元，如同武侠世界中《九阳神功》的出现，为后续所有武功奠定了基础。*
+*专注心经技术的出现真正开启了神机术的新纪元，如同武侠世界中《九阳神功》的出现，为后续所有武功奠定了基础。*

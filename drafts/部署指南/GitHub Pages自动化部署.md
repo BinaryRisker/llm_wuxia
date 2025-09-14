@@ -2,7 +2,7 @@
 
 ## 概述
 
-本文档详细说明如何配置 GitHub Actions 自动化部署 《LLM武侠演义》到 GitHub Pages，实现代码推送后自动构建和发布。
+本文档详细说明如何配置 GitHub Actions 自动化部署 《万卷神功武侠演义》到 GitHub Pages，实现代码推送后自动构建和发布。
 
 ## GitHub Pages 设置
 
@@ -212,7 +212,7 @@ Value: your-username.github.io
               "msgtype": "markdown",
               "markdown": {
                 "title": "部署通知",
-                "text": "## 《LLM武侠演义》部署${{ job.status }}\n\n- **仓库**: ${{ github.repository }}\n- **分支**: ${{ github.ref }}\n- **提交**: ${{ github.sha }}\n- **状态**: ${{ job.status }}\n- **时间**: $(date)\n\n[查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+                "text": "## 《万卷神功武侠演义》部署${{ job.status }}\n\n- **仓库**: ${{ github.repository }}\n- **分支**: ${{ github.ref }}\n- **提交**: ${{ github.sha }}\n- **状态**: ${{ job.status }}\n- **时间**: $(date)\n\n[查看详情](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
               }
             }
 ```
@@ -228,7 +228,7 @@ Value: your-username.github.io
           server_port: 465
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: "部署失败通知 - LLM武侠演义"
+          subject: "部署失败通知 - 万卷神功武侠演义"
           body: |
             部署失败详情：
             - 仓库: ${{ github.repository }}
@@ -373,4 +373,4 @@ jobs:
 - 更新部署流程文档
 - 维护故障排除指南
 
-通过以上配置，《LLM武侠演义》项目将实现完全自动化的部署流程，确保每次代码更新都能快速、可靠地发布到 GitHub Pages。
+通过以上配置，《万卷神功武侠演义》项目将实现完全自动化的部署流程，确保每次代码更新都能快速、可靠地发布到 GitHub Pages。
