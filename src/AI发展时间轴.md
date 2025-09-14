@@ -2,6 +2,31 @@
 
 ## 🕐 江湖风云编年史
 
+### 史前时期：古典武学奠基 (2012-2016)
+
+<div class="timeline-event">
+<h3>壬辰年 (2012年)</h3>
+<h4>深度学习初露锋芒</h4>
+<p>ImageNet比赛，AlexNet夺冠，深度学习开始崭露头角。</p>
+<p><strong>武侠映射</strong>：古典神功初现，为现代武学铺路</p>
+</div>
+
+<div class="timeline-event">
+<h3>甲午年 (2014年)</h3>
+<h4>对抗心法问世</h4>
+<p>Ian Goodfellow提出生成对抗网络(GAN)。</p>
+<p><strong>武侠映射</strong>：对抗心法问世，正邪两道相争</p>
+</div>
+
+<div class="timeline-event">
+<h3>丙申年 (2016年)</h3>
+<h4>棋圣门派震惊武林</h4>
+<p>AlphaGo战胜李世石，围棋神机术首次战胜人类顶级选手。</p>
+<p><strong>武侠映射</strong>：棋圣门派震惊武林，机关术臻至化境</p>
+</div>
+
+### 现代武学纪元 (2017-)
+
 <div class="timeline-container">
 
 <div class="timeline-event">
