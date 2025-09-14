@@ -1,5 +1,4 @@
 # 草稿和设定文件目录
-drafts/
 
 # mdBook构建文件
 build.ps1
