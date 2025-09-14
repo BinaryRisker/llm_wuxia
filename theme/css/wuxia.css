@@ -221,6 +221,115 @@ li::marker {
   transform: scale(1.05);
 }
 
+/* 新增特殊样式 */
+
+/* 人物介绍框 */
+.character-intro {
+  background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(139,0,0,0.1));
+  border-left: 5px solid var(--wuxia-gold);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* 时间轴事件 */
+.timeline-event {
+  position: relative;
+  padding-left: 50px;
+  margin: 30px 0;
+  border-left: 3px solid var(--wuxia-gold);
+  padding-bottom: 20px;
+}
+
+.timeline-event::before {
+  content: "⚔️";
+  position: absolute;
+  left: -15px;
+  top: 0;
+  font-size: 1.5em;
+  background: var(--wuxia-dark-bg);
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid var(--wuxia-gold);
+}
+
+/* 门派信息卡片 */
+.sect-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(26,26,26,0.3);
+  border-radius: 10px;
+  border: 1px solid var(--wuxia-gold);
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+}
+
+.sect-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(212,175,55,0.3);
+}
+
+/* 武功技能条 */
+.skill-bar {
+  background: rgba(26,26,26,0.5);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.skill-fill {
+  background: linear-gradient(90deg, var(--wuxia-gold), #ffd700);
+  height: 20px;
+  border-radius: 8px;
+  transition: width 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--wuxia-dark-bg);
+  font-weight: bold;
+}
+
+/* 诗词样式 */
+.poem {
+  text-align: center;
+  font-style: italic;
+  color: var(--wuxia-gold);
+  background: rgba(139,0,0,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+  border: 2px dashed var(--wuxia-gold);
+}
+
+/* 章节导航 */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 2px solid var(--wuxia-gold);
+  margin-top: 40px;
+}
+
+.nav-button {
+  background: linear-gradient(45deg, var(--wuxia-gold), #b8860b);
+  color: var(--wuxia-dark-bg);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(212,175,55,0.5);
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
   .chapter {
@@ -233,5 +342,18 @@ li::marker {
   
   table {
     font-size: 0.9em;
+  }
+  
+  .sect-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-event {
+    padding-left: 30px;
+  }
+  
+  .chapter-nav {
+    flex-direction: column;
+    gap: 10px;
   }
 }
